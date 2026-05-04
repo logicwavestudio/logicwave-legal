@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informativa sulla privacy — ScanFlow</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   Oxygen, Ubuntu, Cantarell, sans-serif;
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 20px 60px;
+      color: #222;
+      line-height: 1.55;
+      font-size: 16px;
+    }
+    h1 { font-size: 28px; margin-bottom: 6px; }
+    h2 { font-size: 19px; margin-top: 32px; color: #1a1a1a; }
+    h3 { font-size: 16px; margin-top: 18px; color: #333; }
+    .meta { color: #666; font-size: 13.5px; margin-bottom: 28px; }
+    .lang-switch { font-size: 13px; margin-bottom: 18px; }
+    .lang-switch a {
+      text-decoration: none;
+      color: #1a73e8;
+      margin-right: 12px;
+    }
+    a { color: #1a73e8; }
+    code {
+      background: #f3f3f3;
+      padding: 1px 5px;
+      border-radius: 3px;
+      font-size: 14px;
+    }
+    ul { padding-left: 22px; }
+    li { margin-bottom: 4px; }
+    hr { border: none; border-top: 1px solid #eee; margin: 36px 0; }
+    .footer { color: #888; font-size: 12.5px; margin-top: 40px; }
+  </style>
+</head>
+<body>
+
+<div class="lang-switch">
+  <a href="privacy.html">English</a> · <strong>IT</strong>
+</div>
+
+<h1>Informativa sulla privacy — ScanFlow</h1>
+<p class="meta">Data di efficacia: 4 maggio 2026 · Ultimo aggiornamento: 4 maggio 2026</p>
+
+<p>
+  Questa Informativa descrive come l&rsquo;applicazione mobile <strong>ScanFlow</strong>
+  (l&rsquo;&ldquo;App&rdquo;), sviluppata da <strong>LogicWave Studio</strong>
+  (&ldquo;noi&rdquo;), raccoglie, utilizza e protegge le tue informazioni.
+</p>
+
+<p>
+  Contatto: <a href="mailto:logicwavestudio@gmail.com">logicwavestudio@gmail.com</a>.
+</p>
+
+<h2>1. In sintesi</h2>
+<ul>
+  <li>ScanFlow funziona <strong>completamente offline</strong> per impostazione predefinita. Le tue scansioni restano sul tuo dispositivo.</li>
+  <li><strong>Non</strong> gestiamo alcun server. Non raccogliamo le tue scansioni, dati di utilizzo o informazioni personali.</li>
+  <li>Le funzionalità opzionali (backup su Google Drive, accesso con Google, pubblicità, acquisti in-app) coinvolgono <strong>servizi Google</strong> e sono regolate, oltre che da questa Informativa, anche dalla policy sulla privacy di Google.</li>
+</ul>
+
+<h2>2. Dati che vengono trattati</h2>
+
+<h3>2.1 Fotocamera</h3>
+<p>
+  L&rsquo;App accede alla fotocamera <strong>esclusivamente</strong> per scansionare codici a barre e QR code in tempo reale. I frame della fotocamera vengono elaborati <strong>localmente sul tuo dispositivo</strong> tramite Google ML Kit. <strong>Nessuna immagine viene caricata, archiviata o trasmessa</strong> dall&rsquo;App.
+</p>
+
+<h3>2.2 Cronologia scansioni (locale)</h3>
+<p>
+  I valori dei codici scansionati, insieme ai metadati opzionali che decidi di aggiungere (nome, note, tag, cartella, quantità, timestamp), vengono salvati <strong>localmente sul tuo dispositivo</strong> in un database SQLite. Non lasciano mai il dispositivo a meno che tu non attivi esplicitamente il backup su Google Drive (sezione 3.2).
+</p>
+
+<h3>2.3 Impostazioni</h3>
+<p>
+  Le preferenze dell&rsquo;App (tema, lingua, modalità scansione, periodo di conservazione del cestino, ecc.) vengono salvate localmente tramite Android SharedPreferences. Non contengono informazioni personali identificabili.
+</p>
+
+<h2>3. Funzionalità opzionali che coinvolgono terze parti</h2>
+
+<h3>3.1 Accesso con Google</h3>
+<p>
+  Se scegli di accedere con Google, l&rsquo;App riceve nome visualizzato, indirizzo email, URL della foto profilo e un identificatore interno dell&rsquo;account Google. Questi dati vengono salvati localmente per mostrare il tuo profilo nell&rsquo;App. L&rsquo;accesso serve solo per abilitare il backup opzionale su Google Drive; l&rsquo;App è pienamente funzionante anche senza.
+</p>
+
+<h3>3.2 Backup su Google Drive (opt-in)</h3>
+<p>
+  Se attivi il backup, l&rsquo;App carica uno snapshot crittografato delle tue scansioni, cartelle e ultimi export sul <strong>tuo Google Drive personale</strong>, usando l&rsquo;ambito OAuth <code>drive.file</code>. Questo ambito è ristretto da Google in modo che l&rsquo;App possa accedere <strong>solo</strong> ai file che ha creato lei stessa (nello specifico la cartella <code>ScanFlow</code> e il singolo file <code>scanflow_backup.bin</code>). L&rsquo;App non può leggere né modificare altri file presenti nel tuo Drive. I backup sono crittografati con una chiave derivata dall&rsquo;identificatore del tuo account Google (AES-256-GCM); senza il tuo account, il backup non può essere decrittato.
+</p>
+<p>
+  <strong>Noi non abbiamo accesso al tuo Drive.</strong> I backup risiedono interamente nel <em>tuo</em> account Google. Puoi disattivare la sincronizzazione in qualsiasi momento ed eliminare il backup direttamente dall&rsquo;App (Impostazioni → Cancella backup) oppure dal Drive.
+</p>
+
+<h3>3.3 Google AdMob (pubblicità)</h3>
+<p>
+  Gli utenti Free vedono banner e interstitial serviti da Google AdMob. AdMob può raccogliere:
+</p>
+<ul>
+  <li>l&rsquo;<strong>Advertising ID</strong> del tuo dispositivo;</li>
+  <li>informazioni di base sul dispositivo e sull&rsquo;app (modello, versione OS, package, paese, lingua);</li>
+  <li>interazioni con gli annunci (impression, click).</li>
+</ul>
+<p>
+  AdMob è titolare autonomo del trattamento di tali dati. Vedi le
+  <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">policy pubblicitarie di Google</a> e l&rsquo;
+  <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Informativa sulla privacy di Google</a>.
+</p>
+<p>
+  Nello Spazio Economico Europeo, nel Regno Unito e in Svizzera, l&rsquo;App ti mostra una <strong>richiesta di consenso</strong> tramite la User Messaging Platform di Google (UMP) prima di servire qualsiasi annuncio personalizzato. Puoi revocare o aggiornare il tuo consenso in qualsiasi momento dalle impostazioni dell&rsquo;App.
+</p>
+
+<h3>3.4 Acquisti in-app (ScanFlow Pro)</h3>
+<p>
+  Abbonamenti e acquisti una tantum sono gestiti da <strong>Google Play Billing</strong>. Non vediamo mai i tuoi dati di pagamento. L&rsquo;App riceve solo lo stato dell&rsquo;entitlement (attivo / annullato / scaduto) necessario per sbloccare le funzionalità Pro. La gestione dell&rsquo;abbonamento (annullamento, rimborso, metodo di pagamento) avviene interamente su Google Play. Vedi i
+  <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">termini di Google Play</a>.
+</p>
+
+<h2>4. Cosa NON facciamo</h2>
+<ul>
+  <li><strong>Non</strong> usiamo alcun SDK di analytics o telemetria.</li>
+  <li><strong>Non</strong> raccogliamo la posizione del dispositivo.</li>
+  <li><strong>Non</strong> accediamo a contatti, messaggi, foto o file al di fuori della nostra cartella di export.</li>
+  <li><strong>Non</strong> condividiamo né vendiamo dati — non c&rsquo;è nulla da condividere, dato che nulla lascia il tuo dispositivo o il tuo account Google.</li>
+</ul>
+
+<h2>5. Autorizzazioni</h2>
+<p>
+  L&rsquo;App richiede solo l&rsquo;autorizzazione runtime <strong>FOTOCAMERA</strong>, utilizzata esclusivamente per la scansione. Puoi revocarla in qualsiasi momento dalle impostazioni dell&rsquo;app di Android; l&rsquo;App continuerà a funzionare per tutto tranne la scansione live.
+</p>
+
+<h2>6. Minori</h2>
+<p>
+  ScanFlow non è destinato ai minori di 13 anni (o all&rsquo;età minima equivalente nella tua giurisdizione). Non trattiamo consapevolmente dati di minori. Se ritieni che un minore ci abbia fornito informazioni, contattaci all&rsquo;email sopra e provvederemo all&rsquo;eliminazione.
+</p>
+
+<h2>7. I tuoi diritti (GDPR e regolamenti analoghi)</h2>
+<p>
+  Poiché non conserviamo i tuoi dati su nostri server, la maggior parte dei diritti dell&rsquo;interessato si esercita <strong>direttamente sul dispositivo</strong>: l&rsquo;App ti consente di eliminare singole scansioni, svuotare il cestino, cancellare la cronologia, disattivare il backup, disconnetterti ed eliminare il backup remoto. Per esercitare diritti relativi ai dati trattati da Google AdMob o Google Play Billing, fai riferimento ai controlli sulla privacy di Google.
+</p>
+<p>
+  Per qualsiasi domanda relativa alla privacy, scrivi a
+  <a href="mailto:logicwavestudio@gmail.com">logicwavestudio@gmail.com</a>.
+  Ci impegniamo a rispondere entro 30 giorni.
+</p>
+
+<h2>8. Conservazione dei dati</h2>
+<p>
+  I dati locali vengono conservati finché non li elimini o disinstalli l&rsquo;App. Le voci spostate nel cestino vengono cancellate automaticamente dopo il periodo di conservazione configurato (default: 30 giorni). Il backup su Google Drive viene conservato finché non disattivi la sincronizzazione o lo elimini manualmente.
+</p>
+
+<h2>9. Sicurezza</h2>
+<p>
+  I backup su Drive sono crittografati lato client con AES-256-GCM prima del caricamento. I dati locali sul dispositivo sono protetti dalla sandbox standard delle app Android; ti consigliamo di abilitare il blocco schermo del dispositivo per maggiore protezione.
+</p>
+
+<h2>10. Modifiche a questa Informativa</h2>
+<p>
+  Possiamo aggiornare occasionalmente questa Informativa per riflettere nuove funzionalità o requisiti normativi. La data di &ldquo;Ultimo aggiornamento&rdquo; in cima alla pagina riflette sempre la versione più recente. Modifiche sostanziali verranno comunicate tramite un avviso in-app.
+</p>
+
+<h2>11. Contatti</h2>
+<p>
+  LogicWave Studio<br>
+  Email: <a href="mailto:logicwavestudio@gmail.com">logicwavestudio@gmail.com</a>
+</p>
+
+<hr>
+<p class="footer">
+  &copy; 2026 LogicWave Studio. Questo documento è l&rsquo;informativa sulla privacy ufficiale per l&rsquo;applicazione Android ScanFlow (package <code>com.scanflow</code>).
+</p>
+
+</body>
+</html>
