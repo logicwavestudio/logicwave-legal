@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — ScanFlow</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   Oxygen, Ubuntu, Cantarell, sans-serif;
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 20px 60px;
+      color: #222;
+      line-height: 1.55;
+      font-size: 16px;
+    }
+    h1 { font-size: 28px; margin-bottom: 6px; }
+    h2 { font-size: 19px; margin-top: 32px; color: #1a1a1a; }
+    h3 { font-size: 16px; margin-top: 18px; color: #333; }
+    .meta { color: #666; font-size: 13.5px; margin-bottom: 28px; }
+    .lang-switch { font-size: 13px; margin-bottom: 18px; }
+    .lang-switch a {
+      text-decoration: none;
+      color: #1a73e8;
+      margin-right: 12px;
+    }
+    a { color: #1a73e8; }
+    code {
+      background: #f3f3f3;
+      padding: 1px 5px;
+      border-radius: 3px;
+      font-size: 14px;
+    }
+    ul { padding-left: 22px; }
+    li { margin-bottom: 4px; }
+    hr { border: none; border-top: 1px solid #eee; margin: 36px 0; }
+    .footer { color: #888; font-size: 12.5px; margin-top: 40px; }
+  </style>
+</head>
+<body>
+
+<div class="lang-switch">
+  <strong>EN</strong> · <a href="privacy-it.html">Italiano</a>
+</div>
+
+<h1>Privacy Policy — ScanFlow</h1>
+<p class="meta">Effective date: 4 May 2026 · Last updated: 4 May 2026</p>
+
+<p>
+  This Privacy Policy describes how the <strong>ScanFlow</strong> mobile
+  application (the &ldquo;App&rdquo;), developed by
+  <strong>LogicWave Studio</strong> (&ldquo;we&rdquo;, &ldquo;us&rdquo;),
+  collects, uses and protects your information.
+</p>
+
+<p>
+  Contact: <a href="mailto:logicwavestudio@gmail.com">logicwavestudio@gmail.com</a>.
+</p>
+
+<h2>1. Summary</h2>
+<ul>
+  <li>ScanFlow runs <strong>fully offline</strong> by default. Your scans stay on your device.</li>
+  <li>We do <strong>not</strong> operate any backend server. We don&rsquo;t collect
+      your scans, your usage data, or your personal information.</li>
+  <li>Optional features (Google Drive backup, Google Sign-In, ads, in-app
+      purchases) involve <strong>Google services</strong> and are governed
+      by Google&rsquo;s privacy policy in addition to this one.</li>
+</ul>
+
+<h2>2. Data we process</h2>
+
+<h3>2.1 Camera</h3>
+<p>
+  The App accesses the device camera <strong>only</strong> to scan barcodes
+  and QR codes in real time. Camera frames are processed <strong>locally on
+  your device</strong> by Google ML Kit. <strong>No image is ever uploaded,
+  stored, or transmitted</strong> by the App.
+</p>
+
+<h3>2.2 Scan history (local)</h3>
+<p>
+  The barcode values you scan, together with optional metadata you choose to
+  add (name, notes, tags, folder, quantity, timestamp), are stored
+  <strong>locally on your device</strong> in a SQLite database. They never
+  leave your device unless you explicitly enable Google Drive backup
+  (section 3.2).
+</p>
+
+<h3>2.3 Settings</h3>
+<p>
+  App preferences (theme, language, scan mode, retention period for the
+  trash bin, etc.) are stored locally via Android SharedPreferences. They
+  contain no personally identifiable information.
+</p>
+
+<h2>3. Optional features that involve third parties</h2>
+
+<h3>3.1 Google Sign-In</h3>
+<p>
+  If you choose to sign in with Google, the App receives your Google
+  account&rsquo;s display name, email address, profile photo URL and an
+  internal account identifier. These are cached locally to display your
+  profile in the App. Sign-in is required only to enable the optional
+  Google Drive backup; the App is fully functional without it.
+</p>
+
+<h3>3.2 Google Drive backup (opt-in)</h3>
+<p>
+  If you enable backup, the App uploads an encrypted snapshot of your
+  scans, folders and recent exports to <strong>your own Google Drive</strong>,
+  using the OAuth scope <code>drive.file</code>. This scope is restricted by
+  Google so the App can <strong>only</strong> access files it created
+  (specifically the <code>ScanFlow</code> folder and a single
+  <code>scanflow_backup.bin</code> file). The App cannot read or modify any
+  other files in your Drive. Backups are encrypted with a key derived from
+  your Google account identifier (AES-256-GCM); without your account, the
+  backup cannot be decrypted.
+</p>
+<p>
+  We do <strong>not</strong> have access to your Drive. Backups live entirely
+  in <em>your</em> Google account. You can disable sync at any time and
+  delete the backup from within the App (Settings → Delete backup) or
+  directly from Drive.
+</p>
+
+<h3>3.3 Google AdMob (advertising)</h3>
+<p>
+  Free users see banner and interstitial ads served by Google AdMob.
+  AdMob may collect:
+</p>
+<ul>
+  <li>your device&rsquo;s <strong>Advertising ID</strong>;</li>
+  <li>basic device and app information (device model, OS version, app
+      package, country, language);</li>
+  <li>ad interactions (impressions, clicks).</li>
+</ul>
+<p>
+  AdMob acts as an independent data controller for this data. See
+  <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">
+  Google&rsquo;s Advertising policies</a> and
+  <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">
+  Google&rsquo;s Privacy Policy</a>.
+</p>
+<p>
+  In the European Economic Area, the United Kingdom and Switzerland, the App
+  presents you with a <strong>consent prompt</strong> via Google&rsquo;s User
+  Messaging Platform (UMP) before any personalized ad is served. You can
+  withdraw or update your consent at any time from the App settings.
+</p>
+
+<h3>3.4 In-app purchases (ScanFlow Pro)</h3>
+<p>
+  Subscriptions and one-off purchases are processed by <strong>Google Play
+  Billing</strong>. We never see your payment data. The App receives only the
+  entitlement state (active / canceled / expired) needed to unlock Pro
+  features. Subscription management (cancel, refund, payment method) happens
+  entirely on Google Play. See
+  <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">
+  Google Play&rsquo;s terms</a>.
+</p>
+
+<h2>4. What we do NOT do</h2>
+<ul>
+  <li>We do <strong>not</strong> run any analytics or telemetry SDK.</li>
+  <li>We do <strong>not</strong> collect device location.</li>
+  <li>We do <strong>not</strong> access your contacts, messages, photos or files
+      outside our own export folder.</li>
+  <li>We do <strong>not</strong> share or sell any data — there is nothing
+      to share, since nothing leaves your device or your Google account.</li>
+</ul>
+
+<h2>5. Permissions</h2>
+<p>
+  The App requests only the <strong>CAMERA</strong> runtime permission, used
+  solely for scanning. You can revoke it at any time from Android&rsquo;s app
+  settings; the App will continue to function for everything except live
+  scanning.
+</p>
+
+<h2>6. Children</h2>
+<p>
+  ScanFlow is not directed to children under 13 (or the equivalent minimum
+  age in your jurisdiction). We do not knowingly process data from children.
+  If you believe a child has provided us with information, contact us at the
+  email above and we will delete it.
+</p>
+
+<h2>7. Your rights (GDPR / similar regulations)</h2>
+<p>
+  Because we don&rsquo;t store your data on our servers, most data subject
+  rights are exercised <strong>directly on your device</strong>: the App
+  lets you delete any scan, empty the bin, clear your history, disable
+  backup, sign out, and delete the remote backup. To exercise rights about
+  data processed by Google AdMob or Google Play Billing, please refer to
+  Google&rsquo;s privacy controls.
+</p>
+<p>
+  For any privacy-related question, write to
+  <a href="mailto:logicwavestudio@gmail.com">logicwavestudio@gmail.com</a>.
+  We aim to respond within 30 days.
+</p>
+
+<h2>8. Data retention</h2>
+<p>
+  Local data is retained until you delete it or uninstall the App.
+  Items moved to the trash bin are automatically deleted after the
+  retention period you configure (default: 30 days). The Google Drive
+  backup is retained until you disable sync or delete it manually.
+</p>
+
+<h2>9. Security</h2>
+<p>
+  Drive backups are encrypted client-side with AES-256-GCM before upload.
+  Local data on the device is protected by Android&rsquo;s standard app
+  sandbox; we recommend enabling a device lock screen for additional
+  protection.
+</p>
+
+<h2>10. Changes to this policy</h2>
+<p>
+  We may update this policy occasionally to reflect new features or legal
+  requirements. The &ldquo;Last updated&rdquo; date at the top of this page
+  always reflects the latest version. Material changes will be communicated
+  through an in-app notice.
+</p>
+
+<h2>11. Contact</h2>
+<p>
+  LogicWave Studio<br>
+  Email: <a href="mailto:logicwavestudio@gmail.com">logicwavestudio@gmail.com</a>
+</p>
+
+<hr>
+<p class="footer">
+  &copy; 2026 LogicWave Studio. This document is the official privacy policy
+  for the ScanFlow Android application (package <code>com.scanflow</code>).
+</p>
+
+</body>
+</html>
