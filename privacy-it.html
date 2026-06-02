@@ -45,7 +45,7 @@
 </div>
 
 <h1>Informativa sulla privacy — ScanFlow</h1>
-<p class="meta">Data di efficacia: 4 maggio 2026 · Ultimo aggiornamento: 4 maggio 2026</p>
+<p class="meta">Data di efficacia: 4 maggio 2026 · Ultimo aggiornamento: 2 giugno 2026</p>
 
 <p>
   Questa Informativa descrive come l&rsquo;applicazione mobile <strong>ScanFlow</strong>
@@ -59,9 +59,9 @@
 
 <h2>1. In sintesi</h2>
 <ul>
-  <li>ScanFlow funziona <strong>completamente offline</strong> per impostazione predefinita. Le tue scansioni restano sul tuo dispositivo.</li>
-  <li><strong>Non</strong> gestiamo alcun server. Non raccogliamo le tue scansioni, dati di utilizzo o informazioni personali.</li>
-  <li>Le funzionalità opzionali (backup su Google Drive, accesso con Google, pubblicità, acquisti in-app) coinvolgono <strong>servizi Google</strong> e sono regolate, oltre che da questa Informativa, anche dalla policy sulla privacy di Google.</li>
+  <li>Le tue scansioni sono salvate <strong>localmente sul tuo dispositivo</strong>. <strong>Non</strong> gestiamo alcun server e <strong>non</strong> raccogliamo le tue scansioni, dati di utilizzo o informazioni personali.</li>
+  <li>Per aiutarti a etichettare i prodotti, l&rsquo;App può cercare un codice scansionato su <strong>Open Food Facts</strong>, un database pubblico e gratuito di prodotti. In questo caso viene inviato <em>solo il numero del codice a barre</em>. La funzione è <strong>attiva per impostazione predefinita</strong> e può essere disattivata in Impostazioni → Scansione (vedi sezione 3.5).</li>
+  <li>Le altre funzionalità opzionali (backup su Google Drive, accesso con Google, pubblicità, acquisti in-app) coinvolgono <strong>servizi Google</strong> e sono regolate, oltre che da questa Informativa, anche dalla policy sulla privacy di Google.</li>
 </ul>
 
 <h2>2. Dati che vengono trattati</h2>
@@ -120,17 +120,36 @@
   <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">termini di Google Play</a>.
 </p>
 
+<h3>3.5 Recupero informazioni prodotto (Open Food Facts)</h3>
+<p>
+  Per precompilare nome, marca, quantità e immagine di un prodotto quando
+  scansioni o aggiungi un codice a barre, l&rsquo;App può interrogare
+  <a href="https://world.openfoodfacts.org" target="_blank" rel="noopener">Open
+  Food Facts</a>, un database di prodotti gratuito e aperto. Viene inviato solo
+  il <strong>numero del codice a barre</strong>, tramite una richiesta HTTPS del
+  tipo <code>/api/v2/product/&lt;codice&gt;.json</code>; <strong>non</strong>
+  vengono trasmessi account, identificatori del dispositivo, posizione o altri
+  dati personali. I dettagli restituiti (nome, marca, quantità e l&rsquo;URL di
+  un&rsquo;immagine) vengono salvati localmente con la tua voce. La funzione è
+  <strong>attiva per impostazione predefinita</strong> e può essere disattivata
+  in qualsiasi momento in <em>Impostazioni → Scansione → Info prodotto
+  automatiche</em>; quando è disattivata, l&rsquo;App non effettua alcuna ricerca
+  prodotto. Open Food Facts è un servizio indipendente, regolato dalla propria
+  <a href="https://world.openfoodfacts.org/privacy" target="_blank" rel="noopener">informativa
+  sulla privacy</a>.
+</p>
+
 <h2>4. Cosa NON facciamo</h2>
 <ul>
   <li><strong>Non</strong> usiamo alcun SDK di analytics o telemetria.</li>
   <li><strong>Non</strong> raccogliamo la posizione del dispositivo.</li>
   <li><strong>Non</strong> accediamo a contatti, messaggi, foto o file al di fuori della nostra cartella di export.</li>
-  <li><strong>Non</strong> condividiamo né vendiamo dati — non c&rsquo;è nulla da condividere, dato che nulla lascia il tuo dispositivo o il tuo account Google.</li>
+  <li><strong>Non</strong> condividiamo né vendiamo i tuoi dati per pubblicità o profilazione. A parte i dati gestiti dai servizi Google sopra indicati e il codice a barre inviato a Open Food Facts per le ricerche (sezione 3.5), i tuoi contenuti restano sul tuo dispositivo o nel tuo account Google.</li>
 </ul>
 
 <h2>5. Autorizzazioni</h2>
 <p>
-  L&rsquo;App richiede solo l&rsquo;autorizzazione runtime <strong>FOTOCAMERA</strong>, utilizzata esclusivamente per la scansione. Puoi revocarla in qualsiasi momento dalle impostazioni dell&rsquo;app di Android; l&rsquo;App continuerà a funzionare per tutto tranne la scansione live.
+  L&rsquo;App richiede solo l&rsquo;autorizzazione runtime <strong>FOTOCAMERA</strong>, utilizzata esclusivamente per la scansione. Puoi revocarla in qualsiasi momento dalle impostazioni dell&rsquo;app di Android; l&rsquo;App continuerà a funzionare per tutto tranne la scansione live. L&rsquo;App dichiara inoltre l&rsquo;autorizzazione <strong>INTERNET</strong>, usata per le funzionalità online opzionali sopra descritte (recupero info prodotto, backup su Drive, accesso con Google, pubblicità e acquisti in-app).
 </p>
 
 <h2>6. Minori</h2>
@@ -171,7 +190,7 @@
 
 <hr>
 <p class="footer">
-  &copy; 2026 LogicWave Studio. Questo documento è l&rsquo;informativa sulla privacy ufficiale per l&rsquo;applicazione Android ScanFlow (package <code>com.scanflow</code>).
+  &copy; 2026 LogicWave Studio. Questo documento è l&rsquo;informativa sulla privacy ufficiale per l&rsquo;applicazione Android ScanFlow (package <code>com.logicwave.scanflow</code>).
 </p>
 
 </body>

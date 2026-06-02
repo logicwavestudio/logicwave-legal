@@ -45,7 +45,7 @@
 </div>
 
 <h1>Privacy Policy — ScanFlow</h1>
-<p class="meta">Effective date: 4 May 2026 · Last updated: 4 May 2026</p>
+<p class="meta">Effective date: 4 May 2026 · Last updated: 2 June 2026</p>
 
 <p>
   This Privacy Policy describes how the <strong>ScanFlow</strong> mobile
@@ -60,10 +60,15 @@
 
 <h2>1. Summary</h2>
 <ul>
-  <li>ScanFlow runs <strong>fully offline</strong> by default. Your scans stay on your device.</li>
-  <li>We do <strong>not</strong> operate any backend server. We don&rsquo;t collect
-      your scans, your usage data, or your personal information.</li>
-  <li>Optional features (Google Drive backup, Google Sign-In, ads, in-app
+  <li>Your scans are stored <strong>locally on your device</strong>. We do
+      <strong>not</strong> operate any backend server and do <strong>not</strong>
+      collect your scans, usage data, or personal information.</li>
+  <li>To help you label products, the App can look up a scanned barcode on
+      <strong>Open Food Facts</strong>, a free public product database. This
+      sends <em>only the barcode number</em>. The feature is
+      <strong>on by default</strong> and can be turned off in
+      Settings → Scanning (see section 3.5).</li>
+  <li>Other optional features (Google Drive backup, Google Sign-In, ads, in-app
       purchases) involve <strong>Google services</strong> and are governed
       by Google&rsquo;s privacy policy in addition to this one.</li>
 </ul>
@@ -160,14 +165,34 @@
   Google Play&rsquo;s terms</a>.
 </p>
 
+<h3>3.5 Product information lookup (Open Food Facts)</h3>
+<p>
+  To auto-fill a product&rsquo;s name, brand, quantity and image when you scan
+  or add a barcode, the App can query
+  <a href="https://world.openfoodfacts.org" target="_blank" rel="noopener">Open
+  Food Facts</a>, a free and open product database. Only the
+  <strong>barcode number</strong> is sent, via an HTTPS request of the form
+  <code>/api/v2/product/&lt;barcode&gt;.json</code>; <strong>no</strong> account,
+  device identifier, location or other personal data is transmitted. The product
+  details returned (name, brand, quantity and an image URL) are stored locally
+  with your entry. This feature is <strong>enabled by default</strong> and can be
+  turned off at any time in <em>Settings → Scanning → Automatic product info</em>;
+  when it is off, the App performs no product lookups. Open Food Facts is an
+  independent service governed by its own
+  <a href="https://world.openfoodfacts.org/privacy" target="_blank" rel="noopener">privacy
+  policy</a>.
+</p>
+
 <h2>4. What we do NOT do</h2>
 <ul>
   <li>We do <strong>not</strong> run any analytics or telemetry SDK.</li>
   <li>We do <strong>not</strong> collect device location.</li>
   <li>We do <strong>not</strong> access your contacts, messages, photos or files
       outside our own export folder.</li>
-  <li>We do <strong>not</strong> share or sell any data — there is nothing
-      to share, since nothing leaves your device or your Google account.</li>
+  <li>We do <strong>not</strong> share or sell your data for advertising or
+      profiling. Apart from the data handled by the Google services above and
+      the barcode sent to Open Food Facts for product lookups (section 3.5),
+      your content stays on your device or in your own Google account.</li>
 </ul>
 
 <h2>5. Permissions</h2>
@@ -175,7 +200,9 @@
   The App requests only the <strong>CAMERA</strong> runtime permission, used
   solely for scanning. You can revoke it at any time from Android&rsquo;s app
   settings; the App will continue to function for everything except live
-  scanning.
+  scanning. The App also declares the <strong>INTERNET</strong> permission,
+  used for the optional online features above (product lookup, Drive backup,
+  Google Sign-In, ads and in-app purchases).
 </p>
 
 <h2>6. Children</h2>
@@ -234,7 +261,7 @@
 <hr>
 <p class="footer">
   &copy; 2026 LogicWave Studio. This document is the official privacy policy
-  for the ScanFlow Android application (package <code>com.scanflow</code>).
+  for the ScanFlow Android application (package <code>com.logicwave.scanflow</code>).
 </p>
 
 </body>
